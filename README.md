@@ -1,2 +1,2 @@
-# advancement_overload
-advancement overload datapack's source code
+Advancement Overload datapack's source code.
+Report any bugs if there are any.
