@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_scrap"
+    },
+    "title": "Fully In Debris",
+    "description": "Get a stack(64) of ancient debris",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fully_have_debris_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:ancient_debris"
+            ],
+            "count": {
+              "min": 64,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1500,
+    "loot": [
+      "advancement_overload:blocks/nether_s"
+    ]
+  },
+  "parent": "minecraft:nether/obtain_ancient_debris"
+}

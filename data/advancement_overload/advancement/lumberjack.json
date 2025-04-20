@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:pale_oak_log"
+    },
+    "title": "Lumberjack",
+    "description": "Get 27 stacks (1728 in total) of oak log",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lumberjack_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_log"
+            ],
+            "count": {
+              "min": 1728,
+              "max": 1728
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 15000,
+    "loot": [
+      "advancement_overload:entities/lumber"
+    ]
+  },
+  "parent": "advancement_overload:wood_collector"
+}

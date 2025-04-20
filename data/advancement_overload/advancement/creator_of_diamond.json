@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_block"
+    },
+    "title": "Creator Of Diamonds",
+    "description": "Obtain a stack(64) of diamond block",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "creator_of_diamond_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond_block"
+            ],
+            "count": {
+              "min": 64,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 15000,
+    "loot": [
+      "advancement_overload:netherity_2"
+    ]
+  },
+  "parent": "advancement_overload:diamonds_any_one"
+}
